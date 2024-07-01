@@ -25,6 +25,7 @@ nav {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-in-out;
+    
 }
 
 .dropdown-contents {
@@ -38,4 +39,7 @@ nav {
 
 .dropdown-menu.open {
     max-height: 120px; 
+    border-bottom: 1px solid rgb(194, 194, 194);
+    border-top: 1px solid rgb(194, 194, 194);
+
 }

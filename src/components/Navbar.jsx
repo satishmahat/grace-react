@@ -12,17 +12,17 @@ function Navbar() {
         <>
             <nav>
                 <div className="navbar-contents">
-                    <a onClick={handleClick}>
+                    <a onClick={handleClick} href='#'>
                         <i className={`bi ${isMenuOpen ? 'bi-x' : 'bi-list'}`} id="burger-menu" />
                     </a>
-                    <a>Grace Dental Care</a>
+                    <a href=''>Grace Dental Care</a>
                 </div>
             </nav>
             <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`} id="dropdown-menu">
                 <div className="dropdown-contents">
-                    <a><li>About Us</li></a>
-                    <a><li>Contacts</li></a>
-                    <a><li>FAQs</li></a>
+                    <a href=''><li>About Us</li></a>
+                    <a href=''><li>Contacts</li></a>
+                    <a href=''><li>FAQs</li></a>
                 </div>
             </div>
         </>
