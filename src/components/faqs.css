@@ -9,7 +9,8 @@
 }
 
 .faq-image {
-    flex: 0 0 300px; /* Fixed width for the image */
+    /* flex: 0 0 300px;  */
+    max-width: 500px;
     margin: auto; /* Automatically center the image section */
 }
 
@@ -25,6 +26,7 @@
 }
 
 .faq-questions div {
+    font-size: 20px;
     margin-bottom: 10px; 
 }
 
