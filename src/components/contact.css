@@ -1,0 +1,61 @@
+.contact-container{
+    width: 80%;
+    margin: auto;
+}
+.contact-container h1{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    color: #571d82;
+}
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    gap: 30px;
+}
+.contact-info{
+    min-width: 300px;
+    /* flex: 1 1 50%; Take remaining space */
+    /* margin: auto; */
+    font-size: 20px;
+    line-height: 40px;
+}
+.iconbet{
+    display: flex;
+    gap: 20px;
+}
+.contact-info i{
+    font-weight: bolder;
+    font-size: 28px;
+}
+.contact-map{
+    flex: 1 1 50%;
+    height: 300px;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form{
+    padding: 20px;
+    background-color: #d1a9ff;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* @media (max-width: 768px) {
+    .contact-content {
+        justify-content: center;
+    }
+
+    .contact-info, .contact-map {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+} */
