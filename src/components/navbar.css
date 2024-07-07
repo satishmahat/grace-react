@@ -37,6 +37,10 @@ nav {
     font-size: 20px;
 }
 
+.dropdown-contents a:hover{
+    color: #571d82;
+    text-decoration: underline;
+}
 .dropdown-menu.open {
     max-height: 120px; 
     border-bottom: 1px solid rgb(194, 194, 194);

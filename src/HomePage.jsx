@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 function HomePage(){
     return(
         <>
-            <Navbar/><br /><br />
+            <Navbar/><br />
             <Faqs/><br /><br />
             <Contact/><br /><br />
             <Footer/>

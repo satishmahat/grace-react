@@ -36,12 +36,12 @@ footer {
 }
 
 .credit a {
-    color: blue;
+    color: rgb(1, 1, 133);
     text-decoration: underline;
 }
 
 .credit a:hover {
-    color: red;
+    color: rgb(119, 0, 0);
 }
 
 @media (max-width: 768px) {

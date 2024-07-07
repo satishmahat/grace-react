@@ -10,9 +10,9 @@ function Footer(){
                 <span>© 2024 Grace Dental Care Pvt. Ltd.</span>
             </div>
             <div className="footer-socials">
-                <a href="https://www.facebook.com/profile.php?id=100083343639154" target='_blank'><i className="bi bi-facebook" style = {{color:'blue'}}></i></a>
-                <a href="https://www.instagram.com/grace.dental.care/" target='_blank'><i className="bi bi-instagram" style = {{color:'red'}}></i></a>
-                <a href="https://www.linkedin.com/in/bibechana-mahat-641a0613b/" target='_blank'><i className="bi bi-linkedin" style = {{color:'blue'}}></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083343639154" target='_blank'><i className="bi bi-facebook" style = {{color:'rgb(1, 1, 150)'}}></i></a>
+                <a href="https://www.instagram.com/grace.dental.care/" target='_blank'><i className="bi bi-instagram" style = {{color:'rgb(200, 0, 0)'}}></i></a>
+                <a href="https://www.linkedin.com/in/bibechana-mahat-641a0613b/" target='_blank'><i className="bi bi-linkedin" style = {{color:'rgb(1, 1, 150)'}}></i></a>
             </div>
 
         </footer>
