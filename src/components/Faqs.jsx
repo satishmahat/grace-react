@@ -38,7 +38,7 @@ function Faqs(){
 
 
     return (
-        <div className="faq-container">
+        <div className="faq-container" id='faq-container'>
             <div className="faq-image">
                 <img src={faqimage} alt="" />
             </div>

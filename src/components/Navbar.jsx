@@ -20,7 +20,7 @@ function Navbar() {
             </nav>
             <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`} id="dropdown-menu">
                 <div className="dropdown-contents">
-                    <a href=''><li>About Us</li></a>
+                    <a href='#faq-container'><li>About Us</li></a>
                     <a href=''><li>Contacts</li></a>
                     <a href=''><li>FAQs</li></a>
                 </div>
