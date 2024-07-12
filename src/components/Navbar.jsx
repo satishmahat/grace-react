@@ -20,9 +20,9 @@ function Navbar() {
             </nav>
             <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`} id="dropdown-menu">
                 <div className="dropdown-contents">
-                    <a href='#faq-container'><li>About Us</li></a>
-                    <a href=''><li>Contacts</li></a>
-                    <a href=''><li>FAQs</li></a>
+                    <a href='' onClick={handleClick}><li>About Us</li></a>
+                    <a href='#contact-container' onClick={handleClick}><li>Contacts</li></a>
+                    <a href='#faq-container' onClick={handleClick}><li>FAQs</li></a>
                 </div>
             </div>
         </>
