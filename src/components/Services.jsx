@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./services.css";
 import image1 from './images/Treatments/1.png';
@@ -16,6 +18,10 @@ import image12 from './images/Treatments/12.png';
 import image13 from './images/Treatments/13.png';
 
 function Services() {
+    useEffect(() => {
+        AOS.init({ duration: 3000 });
+    }, []);
+
     const services = [
         'Extraction', 'Oral Cavity', 'Dental Crown', 'Dental Calculus', 'Dental Implant',
         'Braces', 'Denture', 'Teeth Whitening', 'Veneers', 'Othodontics', 'Dental Bridge', 'Caries', 'Scaling'
@@ -38,7 +44,7 @@ function Services() {
                 <h1>All Your Dental Needs in One Place</h1>
                 <div className={`services-content ${showMore ? 'expanded' : ''}`}>
                     {services.map((service, index) => (
-                        <div key={index} className="services-card">
+                        <div key={index} className="services-card" data-aos="fade-up" data-aos-duration="700">
                             <div className="services-image">
                                 <img src={images[index]} alt={service} />
                             </div>
