@@ -7,9 +7,32 @@
     background-color: white;
     font-family: Ubuntu;
     scroll-behavior: smooth;
+    max-width: 3840px;
 }
 a{
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #571d82 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #571d82;
+    border-radius: 10px;
+    /* border: 0px solid #ffffff; */
+  }

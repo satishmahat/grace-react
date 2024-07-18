@@ -1,4 +1,17 @@
 .landing-image img{
     width: 100%;
 }
+#land2{
+    display: none;
+}
 
+@media(max-width:820px){
+    #land2{
+        display: block;
+    }
+    #land1{
+        display: none;
+    }
+
+
+}

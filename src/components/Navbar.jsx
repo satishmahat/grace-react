@@ -15,7 +15,7 @@ function Navbar() {
                     <a onClick={handleClick} href='#'>
                         <i className={`bi ${isMenuOpen ? 'bi-x' : 'bi-list'}`} id="burger-menu" />
                     </a>
-                    <a href=''>Grace Dental Care</a>
+                    <a href='#' id='nav-name'>Grace <span>Dental</span> Care</a>
                 </div>
             </nav>
             <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`} id="dropdown-menu">
