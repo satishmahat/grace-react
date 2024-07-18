@@ -4,12 +4,14 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import About from "./components/About";
+import Landing from "./components/Landing";
 
 
 function HomePage(){
     return(
         <>
-            <Navbar/><br />
+            <Navbar/>
+            <Landing/><br />
             <About/>
             <Services/>
             <Faqs/>
