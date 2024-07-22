@@ -4,29 +4,30 @@ import './navbar.css';
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.preventDefault();
         setIsMenuOpen(!isMenuOpen);
     };
 
     return (
-        <>
+        <div className='navbar-container'>
             <nav>
                 <div className="navbar-contents">
-                    <a onClick={handleClick} href='#'>
+                    <a onClick={handleClick} href='#' id="burger-link">
                         <i className={`bi ${isMenuOpen ? 'bi-x' : 'bi-list'}`} id="burger-menu" />
                     </a>
-                    <a href='#' id='nav-name'>Grace <span>Dental</span> Care</a>
+                    <a href='#' id='nav-name'> Grace <span>Dental</span> Care</a>
                 </div>
             </nav>
             <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`} id="dropdown-menu">
                 <div className="dropdown-contents">
-                    <a href='' onClick={handleClick}><li>About Us</li></a>
+                    <a href='#about' onClick={handleClick}><li>About Us</li></a>
                     <a href='#contact-container' onClick={handleClick}><li>Contacts</li></a>
                     <a href='#faq-container' onClick={handleClick}><li>FAQs</li></a>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
-export default Navbar
+export default Navbar;

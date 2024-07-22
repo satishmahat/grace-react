@@ -1,7 +1,7 @@
 .about-us {
     width: 80%;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -34,6 +34,9 @@
   }
   
   .text h4 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -47,11 +50,20 @@
     letter-spacing: 1px;
   }
 
+  .small-pic{
+    height: 30px;
+    width: 30px;
+    display: none;
+  }
+
 
   @media(max-width:750px){
     .pic {
       display: none;
     } 
+    .small-pic{
+      display: block;
+    }
     .text{
       flex: 1;
     }
