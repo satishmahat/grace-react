@@ -4,8 +4,7 @@ import './navbar.css';
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const handleClick = (e) => {
-        e.preventDefault();
+    function handleClick(){
         setIsMenuOpen(!isMenuOpen);
     };
 
@@ -13,7 +12,7 @@ function Navbar() {
         <div className='navbar-container'>
             <nav>
                 <div className="navbar-contents">
-                    <a onClick={handleClick} href='#' id="burger-link">
+                    <a onClick={handleClick}  id="burger-link">
                         <i className={`bi ${isMenuOpen ? 'bi-x' : 'bi-list'}`} id="burger-menu" />
                     </a>
                     <a href='#' id='nav-name'> Grace <span>Dental</span> Care</a>

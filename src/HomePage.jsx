@@ -13,10 +13,10 @@ function HomePage(){
         <>
             <Navbar/>
             <Landing/><br /><br />
-            <About/>
-            <Dentalfacts/><br /><br />
-            <Services/>
+            <About/><br /><br />
+            <Services/><br /><br />
             <Faqs/>
+            <Dentalfacts/><br /><br />
             <Contact/><br /><br />
             <Footer/>
         </>

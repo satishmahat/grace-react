@@ -4,7 +4,7 @@ import logo from './images/logo.png';
 function About(){
     return(
         <>
-        <div className="about-us">
+        <div className="about-us"  id='about'>
             <div className="about">
                 <img src={logo} className="pic" />
                 <div className="text">
