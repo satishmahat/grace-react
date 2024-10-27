@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Landing from "./components/Landing";
 import Dentalfacts from "./components/Dentalfacts";
+import TestimonialSlider from "./components/Testimonials";
 
 
 function HomePage(){
@@ -14,7 +15,8 @@ function HomePage(){
             <Navbar/>
             <Landing/><br /><br />
             <About/><br /><br />
-            <Services/><br /><br />
+            <Services/><br /><br /><br />
+            <TestimonialSlider/>
             <Faqs/>
             <Dentalfacts/><br /><br />
             <Contact/><br /><br />

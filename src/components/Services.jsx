@@ -44,7 +44,7 @@ function Services() {
                 <h1>All Your Dental Needs in One Place</h1>
                 <div className={`services-content ${showMore ? 'expanded' : ''}`}>
                     {services.map((service, index) => (
-                        <div key={index} className="services-card" data-aos="fade-up" data-aos-duration="700">
+                        <div key={index} className="services-card" data-aos="fade-up" data-aos-duration="600">
                             <div className="services-image">
                                 <img src={images[index]} alt={service} />
                             </div>

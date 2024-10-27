@@ -1,6 +1,7 @@
 import './faqs.css'
 import faqimage from './images/faqs.png'
 import React,{useState} from 'react';
+import "aos/dist/aos.css";
 
 function Faqs(){
 
@@ -44,8 +45,8 @@ function Faqs(){
             </div>
             <div className="faq-questions">
                 {faqs.map((faq, index) => (
-                    <div key={index}>
-                        <div className={`question${index + 1}`} onClick={() => handleClick(index)}>
+                    <div key={index} data-aos="fade-up" data-aos-duration="500">
+                        <div className={`question${index + 1}`} onClick={() => handleClick(index)} >
                             {faq.question}
                             <a><i className={`bi ${openIndex === index ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i></a>
                         </div>
