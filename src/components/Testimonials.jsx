@@ -4,37 +4,38 @@ import './testimonials.css'
 const testimonials = [
     {
         image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D", 
-        title: "MY GRACE EXPERIENCE",
+        title: "MY GRACE DENTAL EXPERIENCE",
         description:
-            "As a military-friendly school, Winthrop University helped ease Martha Selmon’s path to working in healthcare. Her military service enabled her to move around the country and to live overseas. Now, she's completed her bachelor’s degree and is working on a graduate degree.",
-        name: "Martha Selmon '23",
-        problem: "New alumna",
+            "The staff here is incredibly kind and professional. Dr. Bibechana took the time to answer all my questions, and my teeth cleaning was done so gently. I’m definitely coming back for regular check-ups!",
+        name: "Martha Selmon",
+        problem: "Scaling",
     },
     {
         image: "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
-        title: "MY GRACE EXPERIENCE",
+        title: "MY GRACE DENTAL EXPERIENCE",
         description:
-            "The support and resources provided by the university have been incredible. I’ve made lifelong friends and learned invaluable skills.",
-        name: "Rahul Sharma '24",
-        problem: "Graduate student",
+            "I had a filling done last week, and I couldn’t be happier with the care I received. The procedure was quick, and Dr. Mahat made sure I was comfortable throughout. I’ve already recommended them to my family!",
+        name: "Rahul Sharma",
+        problem: "Cavity Filling",
     },
     {
         image: "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
-        title: "MY GRACE EXPERIENCE",
+        title: "MY GRACE DENTAL EXPERIENCE",
         description:
-            "From academics to extracurricular activities, my time here has been transformative. I’ve grown so much as a person and as a professional.",
-        name: "Anjali Mehta '23",
-        problem: "Alumna",
+            "I’ve always dreaded going to the dentist, but my experience here was fantastic! My root canal was handled smoothly, and the whole team was supportive and professional. Truly a painless experience.",
+        name: "Anjali Mehta",
+        problem: "Root Canal",
     },
     {
         image: "https://plus.unsplash.com/premium_photo-1682089810582-f7b200217b67?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJ3xlbnwwfHwwfHx8MA%3D%3D",
-        title: "MY GRACE EXPERIENCE",
+        title: "MY GRACE DENTAL EXPERIENCE",
         description:
-            "The faculty and facilities here are top-notch, providing an environment that fosters both personal and academic growth.",
-        name: "Rohit Gupta '25",
-        problem: "Undergraduate student",
+            "The facilities are clean, and the staff is welcoming. I had a whitening treatment that turned out amazing! I feel more confident with my smile now and appreciate the quality of care here.",
+        name: "Rohit Gupta",
+        problem: "Teeth Whitening",
     },
 ];
+
 
 const TestimonialSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
