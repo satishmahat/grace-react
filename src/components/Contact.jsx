@@ -1,10 +1,11 @@
 import "./contact.css";
+import "aos/dist/aos.css";
 
 function Contact() {
 
   return (
     <div className="contact-container" id="contact-container">
-      <h1>Find Us Here..</h1>
+      <h1 data-aos="fade-right" data-aos-duration="800">Find Us Here..</h1>
       <div className="contact-content">
         <div className="contact-info">
           <div className="phone iconbet">

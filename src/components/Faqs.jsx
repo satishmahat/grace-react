@@ -45,7 +45,7 @@ function Faqs(){
             </div>
             <div className="faq-questions">
                 {faqs.map((faq, index) => (
-                    <div key={index} data-aos="fade-up" data-aos-duration="500">
+                    <div key={index} data-aos="fade-up" data-aos-duration="800">
                         <div className={`question${index + 1}`} onClick={() => handleClick(index)} >
                             {faq.question}
                             <a><i className={`bi ${openIndex === index ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i></a>

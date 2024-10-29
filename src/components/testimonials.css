@@ -84,7 +84,7 @@
 }
 
 /* Responsive adjustments */
-@media (min-width: 600px) {
+@media (min-width: 660px) {
     .testimonial-content {
         flex-direction: row;
         text-align: left;

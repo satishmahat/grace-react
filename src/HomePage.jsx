@@ -7,6 +7,7 @@ import About from "./components/About";
 import Landing from "./components/Landing";
 import Dentalfacts from "./components/Dentalfacts";
 import TestimonialSlider from "./components/Testimonials";
+import Message from "./components/Message";
 
 
 function HomePage(){
@@ -15,6 +16,7 @@ function HomePage(){
             <Navbar/>
             <Landing/><br /><br />
             <About/><br /><br />
+            <Message/><br /><br /><br />
             <Services/><br /><br /><br />
             <TestimonialSlider/>
             <Faqs/>

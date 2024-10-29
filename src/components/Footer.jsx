@@ -16,7 +16,7 @@ function Footer(){
             </div>
 
         </footer>
-        <div className="credit">Designed by : <a href="">Satish Mahat</a></div>
+        <div className="credit">Designed by : <a href="https://www.linkedin.com/in/satishmahat/" target='_blank'>Satish Mahat</a></div>
         </>
     );
 }

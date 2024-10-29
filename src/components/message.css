@@ -1,0 +1,78 @@
+.doctor-message-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8)), url('https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/442416621_437721069016011_7107638623120354149_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=f5V7eb4On9MQ7kNvgFnLJqC&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=A-mMzsahkVsTdAA1JAFVwep&oh=00_AYB6bO2i0OtnWj7RX1kKM-tpPiAtuBimv6Sq_qZDyhT5Ow&oe=672557AA');
+    background-size: cover;
+    background-position: center;
+    padding: 0px 15%;
+    max-width: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.message-content {
+    max-width: 80%;
+    background: none;
+    padding: 60px 0;
+}
+
+.message-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.doctor-name{
+    margin-top: 20px;
+    background: none;
+    
+}
+.doctor-name a{
+    padding: 2px 8px;
+    color: #571d82;
+    font-size: 1.5rem;
+    background-color: rgba(240, 248, 255, 0.9);
+}
+.doctor-name a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.doctor-photo-container{
+    background-color: transparent;
+    background: transparent;
+}
+.doctor-photo {
+    filter: brightness(1.2);
+    background-color: transparent;
+    background: transparent;
+    width: 220px;
+    height: 220px;
+    /* scale: 1.2; */
+    border-bottom: 1px solid white;
+    object-fit: cover;
+}
+
+@media (max-width: 968px) {
+    .doctor-message-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 12%;
+    }
+    .message-content {
+        padding: 0;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .message-text {
+        font-size: 1.3rem;
+    }
+    .doctor-photo {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+}
