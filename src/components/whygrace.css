@@ -1,0 +1,73 @@
+.why-grace-container {
+    text-align: center;
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.why-grace-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #571d82;
+    background-color: rgb(245, 245, 245);
+}
+
+.why-grace-cards {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgb(245, 245, 245);
+}
+
+
+.why-grace-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 320px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d00000; 
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #571d82;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #1d1d1d;
+}
+
+@media (min-width: 768px) {
+    .why-grace-cards {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .why-grace-cards {
+        justify-content: start;
+    }
+}

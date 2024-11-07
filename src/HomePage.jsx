@@ -8,6 +8,7 @@ import Landing from "./components/Landing";
 import Dentalfacts from "./components/Dentalfacts";
 import TestimonialSlider from "./components/Testimonials";
 import Message from "./components/Message";
+import Whygrace from "./components/Whygarce";
 
 
 function HomePage(){
@@ -15,7 +16,8 @@ function HomePage(){
         <>
             <Navbar/>
             <Landing/><br /><br />
-            <About/><br /><br />
+            <About/><br />
+            <Whygrace/>
             <Message/><br /><br /><br />
             <Services/><br /><br /><br />
             <TestimonialSlider/>
