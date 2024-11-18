@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomePage from './HomePage'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './HomePage';
 import Loading from './components/Loading.jsx';
 import './App.css';
 
@@ -9,12 +8,18 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+      // Set loading to false when the page is fully loaded
       const handleLoad = () => {
-          setIsLoading(false);
+          setTimeout(() => setIsLoading(false), 500); // Optional delay for smoother transition
       };
 
-      // Listen for the page load event
-      window.addEventListener('load', handleLoad);
+      // Check if the page is already loaded
+      if (document.readyState === 'complete') {
+          handleLoad();
+      } else {
+          // Wait for the load event
+          window.addEventListener('load', handleLoad);
+      }
 
       // Clean up the event listener
       return () => {
@@ -26,12 +31,12 @@ const App = () => {
       <>
           {isLoading && <Loading />}
           <div className={`app-content ${isLoading ? 'hidden' : ''}`}>
-          <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<HomePage/>}></Route>
-            <Route path='/home' element={<HomePage/>}></Route>
-          </Routes>
-          </BrowserRouter>
+              <BrowserRouter>
+                  <Routes>
+                      <Route path='/' element={<HomePage />} />
+                      <Route path='/home' element={<HomePage />} />
+                  </Routes>
+              </BrowserRouter>
           </div>
       </>
   );
