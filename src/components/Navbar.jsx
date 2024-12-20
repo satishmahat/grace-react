@@ -6,18 +6,18 @@ function Navbar() {
     const dropdownRef = useRef(null); // Reference to the dropdown
 
     // Close the menu when clicking outside
-    useEffect(() => {
-        const handleOutsideClick = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsMenuOpen(false);
-            }
-        };
+    // useEffect(() => {
+    //     const handleOutsideClick = (event) => {
+    //         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    //             setIsMenuOpen(false);
+    //         }
+    //     };
 
-        document.addEventListener('mousedown', handleOutsideClick);
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        };
-    }, []);
+    //     document.addEventListener('mousedown', handleOutsideClick);
+    //     return () => {
+    //         document.removeEventListener('mousedown', handleOutsideClick);
+    //     };
+    // }, []);
 
     // Toggle the menu on click
     function handleClick() {
@@ -35,7 +35,7 @@ function Navbar() {
                 </div>
             </nav>
             <div
-                ref={dropdownRef} // Attach ref to the dropdown
+                // ref={dropdownRef} // Attach ref to the dropdown
                 className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`}
                 id="dropdown-menu"
             >

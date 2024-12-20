@@ -9,6 +9,7 @@ import Dentalfacts from "./components/Dentalfacts";
 import TestimonialSlider from "./components/Testimonials";
 import Message from "./components/Message";
 import Whygrace from "./components/Whygarce";
+import ImageCarousel from "./components/ImageCarousel";
 
 
 function HomePage(){
@@ -16,7 +17,8 @@ function HomePage(){
         <>
             <Navbar/>
             <Landing/><br /><br />
-            <About/><br />
+            <About/>
+            <ImageCarousel />
             <Whygrace/>
             <Message/><br /><br /><br />
             <Services/><br /><br /><br />
