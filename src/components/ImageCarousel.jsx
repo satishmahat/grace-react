@@ -36,7 +36,9 @@ const ImageCarousel = () => {
 
   return (
     <div className="carousel-container">
+      <h1 className="caption">Moments at Grace</h1>
       <div className="carousel">
+      <h1 className="caption">Moments at Grace</h1>
         {images.map((image, index) => (
           <img
             key={index}
