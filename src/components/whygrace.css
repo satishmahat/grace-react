@@ -2,6 +2,8 @@
     text-align: center;
     padding: 2.6rem 1rem 4rem 1rem;
     background-color: rgb(245, 245, 245);
+    position: relative; /* Ensure positioning for gradients */
+    overflow: hidden;
 }
 
 .why-grace-container h2 {
@@ -19,11 +21,11 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     background-color: rgb(245, 245, 245);
+    position: relative; /* Needed for gradient positioning */
 }
 
-
 .why-grace-cards::-webkit-scrollbar {
-    display: none;
+    display: none; /* Hide scrollbar for clean design */
 }
 
 .card {
@@ -46,7 +48,7 @@
 .icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #d00000; 
+    /* color: #d00000; */
 }
 
 .card h3 {
@@ -60,14 +62,100 @@
     color: #1d1d1d;
 }
 
+/* Gradients for scroll indication */
+.why-grace-container::before,
+.why-grace-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.why-grace-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
+}
+
+.why-grace-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
+}
+
+/* Arrow indicators */
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0);
+    color: #571d82;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.scroll-arrow.left {
+    left: 10px;
+}
+
+.scroll-arrow.right {
+    right: 10px;
+}
+
 @media (min-width: 768px) {
     .why-grace-cards {
         flex-wrap: nowrap;
         justify-content: center;
     }
+    .scroll-arrow{
+        display: none;
+    }
 }
+
 @media (max-width: 768px) {
     .why-grace-cards {
         justify-content: start;
+    }
+}
+@media (max-width: 502px) {
+    .scroll-arrow.left {
+        left: 5px;
+    }
+    
+    .scroll-arrow.right {
+        right: 5px;
+    }
+
+    .scroll-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(0%);
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0);
+        color: #571d82;
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+        transition: background-color 0.3s ease;
     }
 }
