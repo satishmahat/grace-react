@@ -10,6 +10,7 @@ import TestimonialSlider from "./components/Testimonials";
 import Message from "./components/Message";
 import Whygrace from "./components/Whygarce";
 import ImageCarousel from "./components/ImageCarousel";
+import UpButton from "./components/UpButton";
 
 
 function HomePage(){
@@ -26,6 +27,7 @@ function HomePage(){
             <Faqs/>
             <Dentalfacts/><br /><br />
             <Contact/><br /><br />
+            <UpButton/>
             <Footer/>
         </>
     )
